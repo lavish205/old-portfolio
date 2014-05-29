@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{height: 100%;}
+header ul li{
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+}
+main{max-width: 1000px;margin: 0px auto;padding-top: 120px;}
+header{
+    width: 100%;
+    height: auto;
+    background-color: #CFCFCF;
+    text-align: center;
+    position: fixed;
+}
+#Bio{
+    background-color: #DFDFDF;
+    width: 100%;height: 100%;
+}
+#Skills{
+    background-color: #AFAFAF;
+    width: 100%;
+}
+#Work{
+    background-color: #BFBFBF;
+    width: 100%;
+}
+.active,header ul li:hover{background-color: #303030;color: #DFDFDF;}
+#pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border:7px solid #CACACA;
+}
+.left{float: left;}
+.right{float: right;}
+.right h2{font-size: 30px; color: #585858;}
