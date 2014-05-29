@@ -12,7 +12,7 @@ header ul li{
     cursor: pointer;
 
 }
-main{max-width: 1000px;margin: 0px auto;padding-top: 120px;}
+main{max-width: 1000px;margin: 0px auto;padding-top: 130px;}
 header{
     width: 100%;
     height: auto;
@@ -37,7 +37,7 @@ header{
 #pic{
     width: auto;
     height: 100%;
-    margin-left: -20px;
+    margin-left: -30px;
 }
 #divpic{
     width: 300px;

@@ -12,5 +12,6 @@ $(document).ready(function(){
 		console.log(pos);
 		$('html,body').animate({ scrollTop: $(pos).offset().top }, 'slow');
 	});
+	
 
 });
