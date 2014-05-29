@@ -43,3 +43,4 @@ header{
 .right h2{font-size: 30px; color: #585858; float: right;}
 .right>p{float: right; font-size: 25px; color: #676767;}
 .des{padding: 5px; color: #777777;padding-top: 25px;}
+section>h1{padding-top: 80px;}
