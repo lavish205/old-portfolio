@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Offside', sans-serif;
 }
 body,html{height: 100%;}
 header ul li{
@@ -16,7 +16,7 @@ main{max-width: 1000px;margin: 0px auto;padding-top: 120px;}
 header{
     width: 100%;
     height: auto;
-    background-color: #CFCFCF;
+    background-color: rgba(5,5,5,0.5);
     text-align: center;
     position: fixed;
 }
@@ -45,10 +45,11 @@ header{
     border-radius: 50%;
     border:7px solid #CACACA;
     overflow: hidden;
+    box-shadow: 1px 0px 10px #444;
 }
 .left{float: left;}
 .right{float: right; max-width: 600px;}
 .right h2{font-size: 30px; color: #585858;float: right;}
 .right>p{float: right; font-size: 25px; color: #676767;}
-.des{padding: 5px; color: #777777;padding-top: 25px;line-height: 1.7;}
+.des{padding: 5px; color: #777777;padding-top: 25px;line-height: 1.7; font-family: 'Nova Oval',cursive}
 section>h1{padding-top: 80px;}
