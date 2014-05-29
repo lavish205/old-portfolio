@@ -10,6 +10,7 @@ header ul li{
     padding: 20px;
     height: auto;
     cursor: pointer;
+
 }
 main{max-width: 1000px;margin: 0px auto;padding-top: 120px;}
 header{
@@ -19,6 +20,7 @@ header{
     text-align: center;
     position: fixed;
 }
+
 #Bio{
     background-color: #DFDFDF;
     width: 100%;height: 100%;
@@ -33,14 +35,20 @@ header{
 }
 .active,header ul li:hover{background-color: #303030;color: #DFDFDF;}
 #pic{
+    width: auto;
+    height: 100%;
+    margin-left: -20px;
+}
+#divpic{
     width: 300px;
     height: 300px;
-    border-radius: 150px;
+    border-radius: 50%;
     border:7px solid #CACACA;
+    overflow: hidden;
 }
 .left{float: left;}
 .right{float: right; max-width: 600px;}
-.right h2{font-size: 30px; color: #585858; float: right;}
+.right h2{font-size: 30px; color: #585858;float: right;}
 .right>p{float: right; font-size: 25px; color: #676767;}
-.des{padding: 5px; color: #777777;padding-top: 25px;}
+.des{padding: 5px; color: #777777;padding-top: 25px;line-height: 1.7;}
 section>h1{padding-top: 80px;}
