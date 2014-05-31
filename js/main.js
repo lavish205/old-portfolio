@@ -1,4 +1,7 @@
+$('#main').hide();
 $(document).ready(function(){
+	$('#loading').hide();
+	$('#main').show();
 	var wHeight = $(window).height();
 	
 	$('#Bio').height(wHeight);
