@@ -12,6 +12,28 @@ $(document).ready(function(){
 		console.log(pos);
 		$('html,body').animate({ scrollTop: $(pos).offset().top }, 'slow');
 	});
+	$(window).scroll(function(){
+		var a = $(window).scrollTop();
+		if(a>=0)
+		{
+			$('.active').removeClass('active');
+			$("[data-title='Bio']").addClass('active');
+		}
+		if(a>=500)
+		{
+			$('.active').removeClass('active');
+			$("[data-title='Skills']").addClass('active');
+		}
+		if(a>=1200){
+			$('.active').removeClass('active');
+			$("[data-title='Work']").addClass('active');
+		}
+		if(a>=1820){
+			$('.active').removeClass('active');
+			$("[data-title='Contact']").addClass('active');
+		}
+		
+	});
 	
 
 });
