@@ -1,8 +1,8 @@
 $('#main').hide();
+$('#loading').show();
+$(window).load(function(){$('#loading').hide();	$('#main').show();});
 $(document).ready(function(){
 	$('.hov').hide();
-	$('#loading').hide();
-	$('#main').show();
 	var wHeight = $(window).height();
 	
 	$('#Bio').height(wHeight);
