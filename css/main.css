@@ -71,11 +71,15 @@ section>h1{padding-top: 80px;}
     vertical-align: middle;
 }
 .Skillsimg:hover{
-    background-color: rgba(4,4,4,0.2);
+    background-color: rgba(4,4,4,0.1);
 
 }
 .Skillsimg span:hover{
     
+}
+#Skills ul{
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .expt{
     border-left: 3px solid #171;

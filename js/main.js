@@ -1,5 +1,6 @@
 $('#main').hide();
 $(document).ready(function(){
+	$('.hov').hide();
 	$('#loading').hide();
 	$('#main').show();
 	var wHeight = $(window).height();
@@ -12,7 +13,6 @@ $(document).ready(function(){
 		$('.active').removeClass('active');
 		$(this).addClass('active');
 		var pos = '#'+$(this).data('title');
-		console.log(pos);
 		$('html,body').animate({ scrollTop: $(pos).offset().top }, 'slow');
 	});
 	$(window).scroll(function(){
@@ -35,12 +35,13 @@ $(document).ready(function(){
 			$('.active').removeClass('active');
 			$("[data-title='Contact']").addClass('active');
 		}
-		
-	});
-	$('.Skillsimg').hover(function(){
-		$('span',this).css("opacity","0.1");
-	},function(){
-		$('span',this).css("opacity","1");
 	});
 
+	$('.Skillsimg').hover(function(){
+		$('span',this).hide();
+		$('.hov',this).show();
+	},function(){
+		$('span',this).show();
+		$('.hov',this).hide();
+	});
 });
