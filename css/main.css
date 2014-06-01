@@ -112,3 +112,7 @@ section>h1{padding-top: 80px;}
 
 }
 /*loading*/
+#Contact{
+    background-image:url('../img/background.jpg');
+}
+#Skills{background-image: url('../img/skillground.jpg');}
