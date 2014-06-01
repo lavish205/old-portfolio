@@ -37,6 +37,10 @@ $(document).ready(function(){
 		}
 		
 	});
-	
+	$('.Skillsimg').hover(function(){
+		$('span',this).css("opacity","0.1");
+	},function(){
+		$('span',this).css("opacity","1");
+	});
 
 });

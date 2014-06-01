@@ -61,20 +61,35 @@ section>h1{padding-top: 80px;}
     text-align: center;
 }
 .Skillsimg{
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
+    border-radius: 50%;
 }
-.Skillsimg img{
-    width: 180px;
-    height: 100%;
-    padding: 10px;
-    opacity: 0.6;
+.Skillsimg span{
+    line-height: 150px;
+    vertical-align: middle;
 }
-.Skillsimg img:hover{
-    opacity: 1;
-    cursor: pointer;
+.Skillsimg:hover{
+    background-color: rgba(4,4,4,0.2);
+
 }
+.Skillsimg span:hover{
+    
+}
+.expt{
+    border-left: 3px solid #171;
+    border-top: 3px solid #171;
+    border-right: 3px solid #171;
+}
+.mod{
+    border-left: 3px solid #c60;
+    border-top: 3px solid #c60;
+}
+.beg{
+    border-left:3px solid #d00;
+}
+/*loading*/
 #loading{
     z-index: 99;
     position: absolute;
@@ -92,3 +107,4 @@ section>h1{padding-top: 80px;}
     height: 100px;
 
 }
+/*loading*/
