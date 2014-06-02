@@ -1,6 +1,6 @@
 $('#main').hide();
 $('#loading').hide();
-// $(window).load(function(){$('#loading').hide();	$('#main').show();});
+$(window).load(function(){$('#loading').hide();	$('#main').show();});
 $(document).ready(function(){
 	$('.hov').hide();
 	var wHeight = $(window).height();
