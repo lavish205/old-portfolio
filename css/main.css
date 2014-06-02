@@ -113,6 +113,6 @@ section>h1{padding-top: 80px;}
 }
 /*loading*/
 #Contact{
-    background-image:url('../img/background.jpg');
+    background-color: #303030;
 }
 #Skills{background-image: url('../img/skillground.jpg');}
