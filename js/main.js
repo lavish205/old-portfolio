@@ -1,5 +1,5 @@
 $('#main').hide();
-$('#loading').show();
+$('#loading').hide();
 // $(window).load(function(){$('#loading').hide();	$('#main').show();});
 $(document).ready(function(){
 	$('.hov').hide();
