@@ -35,6 +35,8 @@ $(document).ready(function(){
 			$('.active').removeClass('active');
 			$("[data-title='Contact']").addClass('active');
 		}
+	
+
 	});
 
 	$('.Skillsimg').hover(function(){
