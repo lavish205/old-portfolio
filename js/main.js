@@ -9,12 +9,6 @@ $(document).ready(function(){
 	$('#Skills').height(wHeight);
 	$('#Work').height(wHeight);
 	$('#Contact').height(wHeight);
-	$('header ul li').click(function(){
-		$('.active').removeClass('active');
-		$(this).addClass('active');
-		var pos = '#'+$(this).data('title');
-		$('html,body').animate({ scrollTop: $(pos).offset().top }, 'slow');
-	});
 	$(window).scroll(function(){
 		var a = $(window).scrollTop();
 		if(a>=0)
@@ -35,8 +29,12 @@ $(document).ready(function(){
 			$('.active').removeClass('active');
 			$("[data-title='Contact']").addClass('active');
 		}
-	
-
+	});
+	$('header ul li').click(function(){
+		$('.active').removeClass('active');
+		$(this).addClass('active');
+		var pos = '#'+$(this).data('title');
+		$('html,body').animate({ scrollTop: $(pos).offset().top }, 'slow');
 	});
 
 	$('.Skillsimg').hover(function(){
@@ -45,5 +43,9 @@ $(document).ready(function(){
 	},function(){
 		$('span',this).show();
 		$('.hov',this).hide();
+	});
+	// Nav bar show hide
+	$('span>img').click(function(){
+		$('header ul li').toggle();
 	});
 });
