@@ -95,6 +95,7 @@ span>img{display: none;}
     border:7px solid #CACACA;
     overflow: hidden;   
 }
+
 .left{float: left;}
 .right{float: right; max-width: 600px;}
 .right h2{font-size: 30px; color: #232323;float: right;}
