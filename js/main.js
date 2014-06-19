@@ -41,14 +41,6 @@ $(document).ready(function(){
 		var pos = '#'+$(this).data('title');
 		$('html,body').animate({ scrollTop: $(pos).offset().top }, 'slow');
 	});
-
-	$('.Skillsimg').hover(function(){
-		$('span',this).hide();
-		$('.hov',this).show();
-	},function(){
-		$('span',this).show();
-		$('.hov',this).hide();
-	});
 	// Nav bar show hide
 	$('span>img').click(function(){
 		$('header ul li').toggle();

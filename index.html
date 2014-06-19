@@ -22,35 +22,34 @@
         function initialize() {
             var myLatlng = new google.maps.LatLng(28.6220735,  77.37338569999997);
           var mapOptions = {
-            zoom: 8,
+            zoom: 12,
             center: myLatlng,
             scrollwheel: false,
             navigationControl: false,
             mapTypeControl: false,
             scaleControl: false,
-            draggable: false,
+            draggable: false
           };
 
-          var map = new google.maps.Map(document.getElementById('map-canvas'),
-              mapOptions);
-          var marker = new google.maps.Marker({
-              position: myLatlng,
-              title:"Delhi Home"
-          });
+          var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+           var marker = new google.maps.Marker({
+               position: myLatlng,
+               title:"Hello World!"
+           });
 
-          // To add the marker to the map, call setMap();
-          marker.setMap(map);
-        }
+           // To add the marker to the map, call setMap();
+           marker.setMap(map);
+         }
 
         function loadScript() {
-          var script = document.createElement('script');
-          script.type = 'text/javascript';
-          script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
-              'callback=initialize';
-          document.body.appendChild(script);
-        }
+               var script = document.createElement('script');
+               script.type = 'text/javascript';
+               script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
+                   'callback=initialize';
+               document.body.appendChild(script);
+             }
 
-        window.onload = loadScript;
+             window.onload = loadScript;
 
             </script>
 
@@ -83,25 +82,21 @@
     			</main>
     		</section>
     		<section id="Skills" align="center"><h1></h1>
-    			<ul align="center"  id="Skillsbg">
-    				<li><div class="Skillsimg expt"><span>HTML5</span><span class="hov">80%</span></div></li>
-    				<li><div class="Skillsimg expt"><span>CSS3</span><span class="hov">80%</span></div></li>
-    				<li><div class="Skillsimg mod"><span>Js</span><span class="hov">60%</span></div></li>
-    				<li><div class="Skillsimg beg"><span>Java</span><span class="hov">30%</span></div></li>
-    				<li><div class="Skillsimg mod"><span>PHP</span><span class="hov">58%</span></div></li>
-    				<li><div class="Skillsimg mod"><span>Servers</span><span class="hov">60%</span></div></li>
-    				<li><div class="Skillsimg beg"><span>Python</span><span class="hov">40%</span></div></li>
-    				<li><div class="Skillsimg mod"><span>C</span><span class="hov">50%</span></div></li>
-    				<li><div class="Skillsimg mod"><span>C++</span><span class="hov">45%</span></div></li>
-
+    			<ul align="center">
+                    <li><canvas id="html" width="300" height="250" data-per="85"></canvas></li>
+                    <li><canvas id="css" width="300" height="250" data-per="75"></canvas></li>
+                    <li><canvas id="js" width="300" height="250" data-per="45"></canvas></li>
+                    <li><canvas id="php" width="300" height="250" data-per="35"></canvas></li>
+                    <li><canvas id="objc" width="300" height="250" data-per="15"></canvas></li>
+                    <li><canvas id="python" width="300" height="250" data-per="25"></canvas></li>
+                    <li><canvas id="oops" width="300" height="250" data-per="48"></canvas></li>
+    				<li><canvas id="photoshop" width="300" height="250" data-per="50"></canvas></li>
     			</ul>
     		</section>
     		<section id="Work"><h1></h1>
-    		
-            <h4>Well about my work!, I started working as Firefox Student Ambassador in September,2013 and contributed in many fields like </h4>
+               <h4>Well about my work!, I started working as Firefox Student Ambassador in September,2013 and contributed in many fields like </h4>
             <p align="center">
                     <img src="./img/wgh.png" width="170" height="170" class="grayscale" /><br>
-
             </p>
 
     		</section>
@@ -121,6 +116,6 @@
                 <p align="center" id="footer">&copy; Lavish Aggarwal</p>
     		</section>
     		</div>
-
+<script type="text/javascript" src="./js/canvas.js"></script>
     </body>
 </html>
