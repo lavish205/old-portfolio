@@ -10,6 +10,7 @@
         <link href='http://fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Nova+Oval' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
         <script src="./js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA0m675cHvtgbQr4EWWtTF9nNYLtJqpdh4">
@@ -19,15 +20,20 @@
         function initialize() {
             var myLatlng = new google.maps.LatLng(28.6220735,  77.37338569999997);
           var mapOptions = {
-            zoom: 12,
+            zoom: 8,
             center: myLatlng,
+            scrollwheel: false,
+            navigationControl: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            draggable: false,
           };
 
           var map = new google.maps.Map(document.getElementById('map-canvas'),
               mapOptions);
           var marker = new google.maps.Marker({
               position: myLatlng,
-              title:"Hello World!"
+              title:"Delhi Home"
           });
 
           // To add the marker to the map, call setMap();
@@ -60,6 +66,8 @@
 
 	    		</ul>
 	    	</header>
+            <div id="page"></div>
+            <div id="main"></div>
     		<section id="Bio">
     			<main align="center">
                     <div class="left">
@@ -87,26 +95,28 @@
     			</ul>
     		</section>
     		<section id="Work"><h1></h1>
-    		<ul>
-    			<li class="item">Workshops &amp; Seminars</li>
-    			<li>Mozillian</li>
-    			<li>Projects</li>
-    		</ul>
+    		
+            <h4>Well about my work!, I started working as Firefox Student Ambassador in September,2013 and contributed in many fields like </h4>
+            <p align="center">
+                    <img src="./img/wgh.png" width="170" height="170" class="grayscale" /><br>
+
+            </p>
 
     		</section>
     		<section id="Contact"><h1></h1>
-            <div id="details"><br>
-                <h2 align="center">Wanna Contact me? Drop me mail at</h2>
-                <p align="center"><a href="mailto:lucky.lavish@gmail.com">lavishaggarwal@outlook.com</a></p>
-                <br>
-                <p align="center">
-                    <img src="./img/tw.png" width="50" height="50" class="grayscale con">
-                    <img src="./img/ln.png" width="50" height="50" class="grayscale con">
-                    <img src="./img/gh.png" width="50" height="50" class="grayscale con">
-                </p>
-            </div>
-	    		<div id="map"><div id="map-canvas" align="center">
+                <div id="details"><br>
+                    <h2 align="center" class="conbac">Wanna Contact me? Drop me mail at</h2>
+                    <p align="center" class="conbac"><a href="mailto:lucky.lavish@gmail.com">lavishaggarwal@outlook.com</a></p>
+                    <br>
+                    <p align="center">
+                        <img src="./img/tw.png" width="50" height="50" class="grayscale con">
+                        <img src="./img/ln.png" width="50" height="50" class="grayscale con">
+                        <img src="./img/gh.png" width="50" height="50" class="grayscale con">
+                    </p>
+                </div>
+        		<div id="map"><div id="map-canvas" align="center">
                 </div></div>
+                <p align="center" id="footer">&copy; Lavish Aggarwal</p>
     		</section>
     		</div>
 

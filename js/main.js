@@ -4,28 +4,33 @@ $(window).load(function(){$('#loading').hide();	$('#main').show();});
 $(document).ready(function(){
 	$('.hov').hide();
 	var wHeight = $(window).height();
-	
+	$('#main').height(wHeight);
 	$('#Bio').height(wHeight);
 	$('#Skills').height(wHeight);
 	$('#Work').height(wHeight);
 	$('#Contact').height(wHeight);
+	
+	var SkillsScroll = $('#Skills').offset().top;
+	var WorkScroll = $('#Work').offset().top;
+	var ContactScroll = $('#Contact').offset().top;
 	$(window).scroll(function(){
 		var a = $(window).scrollTop();
+		
 		if(a>=0)
 		{
 			$('.active').removeClass('active');
 			$("[data-title='Bio']").addClass('active');
 		}
-		if(a>=500)
+		if(a>=SkillsScroll)
 		{
 			$('.active').removeClass('active');
 			$("[data-title='Skills']").addClass('active');
 		}
-		if(a>=1200){
+		if(a>=WorkScroll){
 			$('.active').removeClass('active');
 			$("[data-title='Work']").addClass('active');
 		}
-		if(a>=1820){
+		if(a>=ContactScroll){
 			$('.active').removeClass('active');
 			$("[data-title='Contact']").addClass('active');
 		}
@@ -47,5 +52,5 @@ $(document).ready(function(){
 	// Nav bar show hide
 	$('span>img').click(function(){
 		$('header ul li').toggle();
-	});
+	}); 
 });
