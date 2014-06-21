@@ -15,45 +15,45 @@ $(document).ready(function(){
 	var SkillsScroll = $('#Skills').offset().top;
 	var WorkScroll = $('#Work').offset().top;
 	var ContactScroll = $('#Contact').offset().top;
-	var backgroundPosition = $('#page').css("margin-top");
-	var marginValue = backgroundPosition.split('p')[0];
+	// var backgroundPosition = $('#page').css("margin-top");
+	// var marginValue = backgroundPosition.split('p')[0];
 
-	var lastScrollTop = 0,
-	        st,
-	        direction;
+	// var lastScrollTop = 0,
+	//         st,
+	//         direction;
 
-	    function detectDirection() {
+	//     function detectDirection() {
 
-	        st = window.pageYOffset;
-	        console.log(st);
-	        if (st > lastScrollTop) {
-	            direction = "down";
-	        } else {
-	            direction = "up";
-	        }
+	//         st = window.pageYOffset;
+	//         console.log(st);
+	//         if (st > lastScrollTop) {
+	//             direction = "down";
+	//         } else {
+	//             direction = "up";
+	//         }
 
-	        lastScrollTop = st;
-	        if(st<250)
-	        	$('#page').css('margin-top',0);
-	        return  direction;
+	//         lastScrollTop = st;
+	//         if(st<250)
+	//         	$('#page').css('margin-top',0);
+	//         return  direction;
 	        
 
 
-	    }
+	//     }
 
-	    $(window).bind('scroll', function() {
+	//     $(window).bind('scroll', function() {
 
-	        var dir = detectDirection();
-    	    if(dir == 'down')
-    	    {
-    	    	$('#page').css('margin-top',marginValue);
-    	    	marginValue--;
-    	    }
-    	    else{
-    	    	$('#page').css('margin-top',marginValue);
-    	    	marginValue+=1;
-    	    }
-	    });
+	//         var dir = detectDirection();
+ //    	    if(dir == 'down')
+ //    	    {
+ //    	    	$('#page').css('margin-top',marginValue);
+ //    	    	marginValue--;
+ //    	    }
+ //    	    else{
+ //    	    	$('#page').css('margin-top',marginValue);
+ //    	    	marginValue+=1;
+ //    	    }
+	//     });
 	$(window).scroll(function(){
 		var a = $(window).scrollTop();
 		if(a>=0)
