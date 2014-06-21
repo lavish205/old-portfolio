@@ -253,8 +253,11 @@ $(document).ready(function(){
       $(window).scroll(function(){
             var a = $(window).scrollTop();
             var b = $('#Skills').offset().top;
-            b = b-200;
-            var c = b +500;
+            b -=300;
+            var c = $('#Work').offset().top;
+            var d = $('#Bio').offset().top;
+            if(a >= (c+200))
+                  flag=true;
             if(a >= b)
             {
                   if(flag)
